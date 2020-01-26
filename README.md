@@ -1,5 +1,7 @@
 # React Weather App
+
 I'm using OpenWeatherApp APIs to fetch current weather condition in json format. After that all the data is populated in their respective fields.
+
 ---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -9,9 +11,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In the project directory, you can run:
 
 ### `npm i`
+
 When you clone this repository, make sure you run `npm i` to install the required node modules for the react app.
 
 ### `npm start`
+
 To run this project use npm command `npm start` to run the project or else you can use following `yarn` command to run the project.
 
 ### `yarn start`
