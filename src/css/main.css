@@ -1,0 +1,128 @@
+:root {
+}
+body {
+  margin: 0;
+  height: 100vh;
+  color: #333;
+}
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-image: url("https://images.pexels.com/photos/2310641/pexels-photo-2310641.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -50%;
+}
+.app-container {
+  box-sizing: border-box;
+  width: 40vw;
+  height: 60vh;
+  background: #ffffff10;
+  backdrop-filter: blur(10px);
+  padding: 1rem 1.5rem;
+  display: grid;
+  border: 0.5px solid #ffffff50;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30px 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+#root:after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+  background-image: url("https://openweathermap.org/themes/openweathermap/assets/img/openweather-negative-logo-RGB.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 120px;
+  height: 50px;
+}
+
+.fa {
+  margin-right: 6px;
+}
+
+.location {
+  justify-self: end;
+  grid-column: 1 / -1;
+  font-size: 0.8em;
+}
+h1.weather-condition {
+  margin: 0.5rem;
+  margin-top: -1rem;
+  margin-bottom: 0;
+}
+.weather {
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ccc;
+}
+.weather-icon {
+  width: 120px;
+}
+div.weather-condition-wrapper {
+  text-align: center;
+}
+.weather-description {
+  font-size: 0.8rem;
+}
+
+.wind-info,
+.temp-info,
+.temp-min-max {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  margin-top: 1rem;
+}
+.wind-info {
+  margin-top: 0;
+}
+.temp-info {
+  flex-direction: column;
+}
+.temp-max i {
+  color: #e44e3b;
+}
+.temp-min i {
+  color: #5ba9ee;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 720px) {
+  .app-container {
+    width: 80%;
+  }
+  #root {
+    background-size: 140%;
+    background-position: 0 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #root {
+    background-size: 140%;
+    background-position: 0 70%;
+  }
+}
+
+@media (max-width: 375px) {
+  #root {
+    background-size: 200%;
+    background-position: 0 70%;
+  }
+}
