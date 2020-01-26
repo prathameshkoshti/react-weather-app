@@ -1,5 +1,4 @@
 # React Weather App
----
 I'm using OpenWeatherApp APIs to fetch current weather condition in json format. After that all the data is populated in their respective fields.
 ---
 
